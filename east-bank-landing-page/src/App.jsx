@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { BgIntroBck, IconApi, IconBudgeting,IconClose,IconFacebook,Logo } from "./assets/index";
+import { BgIntroBck, IconApi, IconBudgeting,IconClose,IconFacebook,IconOnboarding } from "./assets/index";
+import HeaderFooter from "./components/Header_Footer";
 
 function App() {
   return (
-    <div>
-      <div>Hello</div>
-      {/* <BgIntroBck /> */}
-      <Logo />
-    </div>
+    <>
+      <HeaderFooter>
+        <div>body</div>
+      </HeaderFooter>
+    </>
   );
 }
 
