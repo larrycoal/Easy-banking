@@ -1,0 +1,82 @@
+.header-wrapper {
+  padding: 0 4rem;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    padding-top: 10px;
+    .links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    a {
+      padding: 1rem 0;
+      text-decoration: none;
+      color: hsl(233, 8%, 62%);
+      &:hover {
+        border-bottom: 2px solid black;
+        color: hsl(233, 26%, 24%);
+      }
+    }
+    button {
+      padding: 10px 1rem;
+      border-radius: 20px;
+      color: white;
+      border: none;
+      background-color: hsl(136, 65%, 51%);
+    }
+  }
+}
+footer {
+  background-color: #2d314d;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 6rem;
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    li {
+      margin: 0 2rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      &:hover {
+        color: hsl(233, 8%, 62%);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      padding: 10px 1rem;
+      border-radius: 20px;
+      color: white;
+      border: none;
+      background-color: hsl(136, 65%, 51%);
+    }
+    p {
+      padding: 1rem 0;
+      color: hsl(233, 8%, 62%);
+    }
+  }
+}

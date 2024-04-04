@@ -1,0 +1,29 @@
+.reason-wrapper {
+  height: 40rem;
+  background-color: hsl(220, 16%, 96%);
+  padding: 2rem 6rem;
+  h2 {
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+  p {
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    color: hsl(233, 8%, 62%);
+    font-size: 1rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem 0;
+    h3 {
+      letter-spacing: 2px;
+      font-weight: 300;
+      margin: 1rem 0;
+    }
+  }
+}
