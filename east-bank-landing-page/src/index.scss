@@ -11,4 +11,6 @@ html,body,#root{
 }
 .main-wrapper{
   background-color:  hsl(0, 0%, 98%);
+  overflow: hidden;
+  position: relative;
 }
