@@ -1,5 +1,5 @@
 .header-wrapper {
-  padding: 0 4rem;
+  padding: 0rem 4rem;
   background-color: white;
   position: relative;
   z-index: 3;
@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    height: 70px;
     padding-top: 10px;
     .links {
       display: flex;
@@ -18,7 +19,7 @@
       text-decoration: none;
       color: hsl(233, 8%, 62%);
       &:hover {
-        border-bottom: 2px solid black;
+        border-bottom: 3px solid black;
         color: hsl(233, 26%, 24%);
       }
     }
