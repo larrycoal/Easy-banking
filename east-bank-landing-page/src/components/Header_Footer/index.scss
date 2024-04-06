@@ -13,8 +13,10 @@
     .links {
       display: flex;
       gap: 1.5rem;
+      height: 100%;
     }
     a {
+      
       padding: 1rem 0;
       text-decoration: none;
       color: hsl(233, 8%, 62%);
@@ -78,6 +80,25 @@ footer {
     p {
       padding: 1rem 0;
       color: hsl(233, 8%, 62%);
+    }
+  }
+}
+@media screen and (max-width:"500px") {
+  .header-wrapper{
+    padding: 0;
+  }
+  .links{
+    display: none !important;
+  }
+  button{
+    display: none !important;
+  }
+  footer{
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    ul{
+      grid-template-columns: 1fr;
     }
   }
 }

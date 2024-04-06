@@ -56,3 +56,35 @@
     right: -7rem;
     z-index: 2;
 }
+@media screen and (max-width:"500px") {
+  .hero-wrapper{
+    flex-direction: column;
+    padding: 0 1rem;
+    .left{
+      order: 2;
+      max-width: 100%;
+      h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+      p{
+        width: fit-content;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    }
+    .right{
+      order: 1;
+      flex: none;
+      height: 25rem;
+      svg{
+        display: none;
+      }
+    }
+  }
+  .hero-phone{
+    height: 400px;
+    right: 0;
+    top: -2rem;
+  }
+}
