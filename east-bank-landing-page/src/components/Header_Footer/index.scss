@@ -15,8 +15,10 @@
       gap: 1.5rem;
       height: 100%;
     }
+    .hamburger {
+      display: none;
+    }
     a {
-      
       padding: 1rem 0;
       text-decoration: none;
       color: hsl(233, 8%, 62%);
@@ -83,21 +85,27 @@ footer {
     }
   }
 }
-@media screen and (max-width:"500px") {
-  .header-wrapper{
+@media screen and (max-width: "500px") {
+  .header-wrapper {
     padding: 0;
   }
-  .links{
+  .hamburger{
+    display: flex !important;
+  }
+  nav {
+    padding: 0 1rem !important;
+  }
+  .links {
     display: none !important;
   }
-  button{
+  button {
     display: none !important;
   }
-  footer{
+  footer {
     flex-direction: column;
     padding: 2rem;
     align-items: center;
-    ul{
+    ul {
       grid-template-columns: 1fr;
     }
   }

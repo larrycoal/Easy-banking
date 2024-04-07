@@ -6,6 +6,7 @@ import {
   IconTwitter,
   IconYoutube,
   Logo,
+  IconHamburger
 } from "../../assets";
 import "./index.scss";
 
@@ -23,6 +24,7 @@ const HeaderFooter = ({ children }) => {
             <a href="/">Careers</a>
           </div>
           <button>Request Invite</button>
+          <IconHamburger />
         </nav>
       </header>
       {children}

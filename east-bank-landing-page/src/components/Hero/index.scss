@@ -78,7 +78,14 @@
       flex: none;
       height: 25rem;
       svg{
-        display: none;
+        width: 700px;
+      }
+      svg:nth-child(1){
+        left: -9rem;
+      }
+        svg:nth-child(2){
+        left: -20rem;
+        top: -10rem;
       }
     }
   }
