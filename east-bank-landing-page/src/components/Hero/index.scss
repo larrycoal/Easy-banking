@@ -45,51 +45,51 @@
       border-radius: 20px;
       color: white;
       border: none;
-      background-color: hsl(136, 65%, 51%);
+      background: linear-gradient(90deg, #31d35c, #2bb7da);
       font-weight: 700;
     }
   }
 }
-.hero-phone{
-    position: absolute;
-    top: -7rem;
-    right: -7rem;
-    z-index: 2;
+.hero-phone {
+  position: absolute;
+  top: -7rem;
+  right: -7rem;
+  z-index: 2;
 }
-@media screen and (max-width:"500px") {
-  .hero-wrapper{
+@media screen and (max-width: "500px") {
+  .hero-wrapper {
     flex-direction: column;
     padding: 0 1rem;
-    .left{
+    .left {
       order: 2;
       max-width: 100%;
-      h1{
+      h1 {
         font-size: 2rem;
         text-align: center;
       }
-      p{
+      p {
         width: fit-content;
         margin: 1rem 0;
         text-align: center;
       }
     }
-    .right{
+    .right {
       order: 1;
       flex: none;
       height: 25rem;
-      svg{
+      svg {
         width: 700px;
       }
-      svg:nth-child(1){
+      svg:nth-child(1) {
         left: -9rem;
       }
-        svg:nth-child(2){
+      svg:nth-child(2) {
         left: -19rem;
         top: -10rem;
       }
     }
   }
-  .hero-phone{
+  .hero-phone {
     height: 400px;
     right: 1.5rem;
     top: -2rem;
