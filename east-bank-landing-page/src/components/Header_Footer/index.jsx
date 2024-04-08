@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IconFacebook,
   IconInstagram,
@@ -6,11 +6,12 @@ import {
   IconTwitter,
   IconYoutube,
   Logo,
-  IconHamburger
+  IconHamburger,
 } from "../../assets";
 import "./index.scss";
 
 const HeaderFooter = ({ children }) => {
+  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <>
       <header className="header-wrapper">
@@ -24,8 +25,36 @@ const HeaderFooter = ({ children }) => {
             <a href="/">Careers</a>
           </div>
           <button>Request Invite</button>
-          <IconHamburger />
+          <span className="hamburger" onClick={() => setShowDropDown(!showDropDown)}>
+            <IconHamburger />
+          </span>
         </nav>
+        <div
+          className="mobile-links"
+          style={
+            showDropDown
+              ? { display: "block", top: "5rem", opacity: 1 }
+              : { display: "none", top: "0rem", opacity: 0 }
+          }
+        >
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </div>
       </header>
       {children}
       <footer>
