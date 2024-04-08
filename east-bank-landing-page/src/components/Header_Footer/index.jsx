@@ -7,6 +7,7 @@ import {
   IconYoutube,
   Logo,
   IconHamburger,
+  IconClose,
 } from "../../assets";
 import "./index.scss";
 
@@ -25,8 +26,11 @@ const HeaderFooter = ({ children }) => {
             <a href="/">Careers</a>
           </div>
           <button>Request Invite</button>
-          <span className="hamburger" onClick={() => setShowDropDown(!showDropDown)}>
-            <IconHamburger />
+          <span
+            className="hamburger"
+            onClick={() => setShowDropDown(!showDropDown)}
+          >
+            {!showDropDown ? <IconHamburger /> : <IconClose />}
           </span>
         </nav>
         <div
