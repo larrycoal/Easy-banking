@@ -39,10 +39,10 @@
   }
 }
 .mobile-links {
-  display: none;
   top: 0rem;
   position: absolute;
   opacity: 0;
+  transition: all 0.5s ease-out;
 }
 footer {
   background-color: #2d314d;

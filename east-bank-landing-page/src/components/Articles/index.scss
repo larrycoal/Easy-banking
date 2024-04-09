@@ -45,6 +45,7 @@
 @media screen and (max-width:"500px"){
     .cards-container{
         flex-direction: column;
+        align-items: center;
     }
     .articles-wrapper{
         padding: 1rem;
